@@ -66,7 +66,7 @@ const Products = () => {
     <div className={styles.container}>
       <Card>
         <div className="top">
-          <h1>Filters</h1>
+          <h1>Filtersz</h1>
           {!!Object.values(query).length && (
             <div>
               {Object.values(query).map((filter) => (
