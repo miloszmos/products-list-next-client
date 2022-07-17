@@ -20,4 +20,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Merging branch to master will trigger production build and deploy
 
-App is available via this link:
+App is live here: [https://products-list-next-client.vercel.app/products](https://products-list-next-client.vercel.app/products)
