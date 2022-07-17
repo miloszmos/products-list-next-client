@@ -1,0 +1,13 @@
+@import "@styles/reusable.module.scss";
+
+.container :global {
+  .no-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: $fs-medium;
+      font-weight: $fw-medium;
+    }
+  }
+}

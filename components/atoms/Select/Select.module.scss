@@ -1,0 +1,26 @@
+@import "@styles/reusable.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: $fs-small;
+    font-weight: $fw-semiBold;
+  }
+  [class~="select"] {
+    border: 2px solid $white;
+    margin-top: 4px;
+    position: relative;
+    padding: 12px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: $black;
+    font-weight: $fw-bold;
+    font-size: $fs-medium;
+    &:focus {
+      border: 2px solid $white-light;
+      box-shadow: 0 0 3px $white;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import "@styles/reusable.module.scss";
+
+.container :global {
+  background-color: $blue-deep-dark;
+  color: $white;
+  border-radius: 8px;
+  border: 2px solid $blue-medium;
+  margin-bottom: 15px;
+  display: flex;
+  .picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 200px;
+    max-height: 200px;
+    @include screenXs() {
+      width: 150px;
+    }
+    img {
+      padding: 5px;
+    }
+  }
+  .info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+    .title {
+      font-weight: $fw-semiBold;
+      font-size: $fs-medium;
+      line-height: 1.5;
+    }
+    .desc {
+      font-weight: $fw-medium;
+      font-size: $fs-small;
+      line-height: 1.66;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .bottom {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include screenXs() {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+  }
+  .price,
+  .stock {
+    text-align: end;
+    @include screenXs() {
+      margin-top: 10px;
+    }
+  }
+  .price {
+    font-size: 18px;
+    .base-price {
+      position: relative;
+      &.discount {
+        &::before {
+          content: "";
+          top: 50%;
+          left: 50%;
+          position: absolute;
+          width: 40px;
+          height: 3px;
+          transform-origin: bottom left;
+          transform: rotate(-30deg) translate(-50%, -50%);
+          background-color: $price-discount;
+        }
+      }
+    }
+
+    span {
+      margin-left: 10px;
+      font-size: $fs-medium;
+      font-weight: $fw-bold;
+    }
+  }
+  .stock {
+    margin: 5px 0;
+    font-size: $fs-small;
+    font-weight: $fw-bold;
+    .green {
+      color: $stock-high;
+    }
+    .orange {
+      color: $stock-medium;
+    }
+    .red {
+      color: $stock-low;
+    }
+  }
+}

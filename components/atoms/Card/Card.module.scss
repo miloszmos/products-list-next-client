@@ -1,0 +1,14 @@
+@import "@styles/reusable.module.scss";
+
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  margin: auto;
+  border-radius: 10px;
+  background: linear-gradient(to right bottom, $blue-light, $blue-dark 120%);
+
+  @include screenXs() {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap");
+@import "@styles/reusable.module.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: $white;
+  font-family: "IBM Plex Sans", Droid Sans, Helvetica Neue, sans-serif;
+  background-color: $bluish-black;
+  height: 101vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

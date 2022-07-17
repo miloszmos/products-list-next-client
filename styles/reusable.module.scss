@@ -1,0 +1,46 @@
+// colors
+$white: #fff;
+$white-light: aliceblue;
+$primary: yellow;
+$blue-light: rgb(4, 105, 206);
+$blue-medium: rgb(30, 73, 118);
+$blue-dark: rgb(0, 44, 88);
+$blue-deep-dark: rgb(0, 30, 60);
+$bluish-black: #0a1929;
+$black: rgb(39, 39, 39);
+$badge-dark: rgb(61, 71, 82);
+
+$stock-high: #1ed760;
+$stock-medium: #f9a51b;
+$stock-low: #df5c61;
+
+$price-discount: #f9a51b;
+
+// font size
+$fs-large: 24px;
+$fs-medium: 16px;
+$fs-small: 12px;
+
+// font weight
+$fw-bold: 700;
+$fw-semiBold: 600;
+$fw-medium: 500;
+$fw-normal: 400;
+$fw-light: 300;
+$fw-extraLight: 200;
+
+// screens
+$screen-xs: 600px;
+
+// mixins
+@mixin screenXs() {
+  @media (max-width: $screen-xs) {
+    @content;
+  }
+}
+
+@mixin class($name) {
+  [class~="#{$name}"] {
+    @content;
+  }
+}
